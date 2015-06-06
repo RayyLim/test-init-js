@@ -1,0 +1,26 @@
+{
+  "name": "middleman-test",
+  "version": "0.0.0",
+  "authors": [
+    "ray <rayylim@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular-route": "~1.4.0",
+    "angularLocalStorage": "~0.3.0",
+    "backbone-events": "*",
+    "underscore": "~1.8.3",
+    "bootstrap-sass-official": "~3.3.4"
+  }
+}
