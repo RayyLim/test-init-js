@@ -1,3 +1,10 @@
+TODO
+===
+- Display editable Date and Time with current date, and current time (should the time be updating every second? and freeze when edited?)
+- 
+
+Notes
+====
 Date 
 Time
 
@@ -40,6 +47,7 @@ Gain/loss
 Margin
 Balance
 Cost of the trade
+ ( Want to back it up later with actual trades ... more accurate times)
 
 
 Indicators and their values
@@ -78,4 +86,11 @@ screen shot of the trade
  Drawdown
  losing streaks
  The amount and ratio of winners to losers
+
+ Studies I want to do
+ ====================
+ What is the historical price of ATM? 
+ - Is it really the black scholes model? How accurate are they? 
+
+ 
 

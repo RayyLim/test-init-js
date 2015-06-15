@@ -21,6 +21,10 @@
     "angularLocalStorage": "~0.3.0",
     "backbone-events": "*",
     "underscore": "~1.8.3",
-    "bootstrap-sass-official": "~3.3.4"
+    "bootstrap-sass-official": "~3.3.4",
+    "ng-uuid": "~0.1.1"
+  },
+  "devDependencies": {
+    "qunit": "~1.18.0"
   }
 }
