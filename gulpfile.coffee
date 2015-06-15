@@ -10,7 +10,7 @@ coffeelint     = require 'gulp-coffeelint'
 sass           = require 'gulp-sass'
 autoprefixer   = require 'gulp-autoprefixer'
 browserSync    = require 'browser-sync'
-qunit          = require 'gulp-qunit'
+qunit          = require 'node-qunit-phantomjs'
 mainBowerFiles = require 'main-bower-files'
 gulpFilter     = require 'gulp-filter'
 concat         = require 'gulp-concat'
@@ -71,8 +71,8 @@ gulp.task 'build', ['bower-css', 'html', 'js', 'css']
 gulp.task 'default', ['clean'], -> gulp.start 'test'
 
 gulp.task 'watch', ->
-    gulp.watch 'source/**/*.coffee', ['js']
-    gulp.watch 'tests/**/*.coffee', ['test']
+    gulp.watch 'source/**/*.coffee', ['js', 'qunit']
+    gulp.watch 'tests/**/*.coffee', ['test', 'qunit']
     gulp.watch 'source/**/*.sass', ['css']
     gulp.watch 'source/**/*.css', ['css']
     gulp.watch 'source/**/*.jade', ['html']
@@ -92,3 +92,6 @@ gulp.task 'server', ['build'], ->
     browserSync.init
         server:
             baseDir: './build/'
+
+gulp.task 'qunit', ->
+    qunit('build/index.html')
